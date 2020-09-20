@@ -1,5 +1,18 @@
 @import 'bootstrap/dist/css/bootstrap';
 
+.search_area {
+  padding-top: 50px;
+}
+
+.no-right-padding {
+  padding-right: 0 !important;
+}
+
+.no-left-padding {
+  padding-left: 0 !important;
+}
+
+
 #logo {
   float: left;
   font-size: 1.7em;
