@@ -28,11 +28,7 @@ class User < ApplicationRecord
   def self.search(param)
     # Borrar espacios que pueden estar en el campo de busqueda
     param.strip!
-    to_return = (first_name_matches(param) + last_name_matches(param) + email_matches(param)).uniq
-
-    return nil unless to_return
-    to_return
-
+    (first_name_matches(param) + last_name_matches(param) + email_matches(param)).uniq
   end
 
   def self.first_name_matches(param)
